@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tigrinho da Católica</title>
+    <link rel="icon" href="/images/logo-catolica.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="game-container">
+        <header>
+            <h1>Tigrinho da Católica</h1>
+            <div class="pot-container">
+                <span>Prêmio Total:</span>
+                <span id="total-pot">R$ 0.00</span>
+            </div>
+        </header>
+
+        <main>
+            <div class="roulette-wrapper">
+                <div class="pointer"></div>
+                <div class="wheel" id="wheel"></div>
+            </div>
+
+            <div class="message-area" id="message-area">
+                Adicione jogadores para começar a rodada!
+            </div>
+        </main>
+
+        <footer>
+            <div class="player-entry">
+                <h3>Adicionar Jogador</h3>
+                <input type="text" id="player-name" placeholder="Nome do Jogador">
+                <input type="number" id="player-bet" placeholder="Valor da Aposta (R$)">
+                <button id="add-player-button">Entrar na Rodada</button>
+            </div>
+
+            <div class="player-list-container">
+                <h3>Jogadores na Rodada:</h3>
+                <ul id="player-list">
+                    <!-- Jogadores serão adicionados aqui via JS -->
+                </ul>
+            </div>
+            
+            <button id="spin-button">GIRAR ROLETA</button>
+            <p class="responsible-gaming">Jogo destinado a maiores de 18 anos. Jogue com responsabilidade.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
